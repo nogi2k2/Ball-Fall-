@@ -8,13 +8,13 @@ var currentBlocks = [];
 function moveLeft(){
     var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     if(left>0){
-        character.style.left = left - 5 + "px";
+        character.style.left = left - 4 + "px";
     }
 }
 function moveRight(){
     var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     if(left<380){
-        character.style.left = left + 5 + "px";
+        character.style.left = left + 4 + "px";
     }
 }
 document.addEventListener("keydown", event => {
